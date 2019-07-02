@@ -67,6 +67,7 @@ img {
   text-align: left;
 }
 
+/* TODO SECTION */
 .todo {
   display: flex;
 }
@@ -152,12 +153,14 @@ img {
   z-index: 2;
 }
 
+/* FOOTER */
 .footer {
   font-family: "SF-Pro-Text-Regular";
   font-size: 14.4px;
   color: #2f3132;
   letter-spacing: -0.34px;
   text-align: left;
+  margin-bottom: 4rem;
 }
 
 .footer_wrapper {
@@ -166,14 +169,59 @@ img {
 
 .footer_card {
   flex: 0 1 33%;
-  margin-right: 1rem;
-  border: 1px solid red;
+  margin-right: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .footer_card:last-child {
   margin: 0;
 }
 
+/* FOOTER CARD */
+.card_img {
+  height: 160px;
+  background: url(/assets/images/true-agency-o4UhdLv5jbQ-unsplash.jpg) no-repeat center center/cover;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.card_body {
+  padding: 2rem;
+  border: 1px solid #dedede;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.card_title {
+  font-family: "SF-Pro-Text-Medium";
+  font-size: 21px;
+  color: #2f3132;
+  letter-spacing: -0.49px;
+  margin-bottom: 1rem;
+}
+
+.card_text {
+  font-family: "SF-Pro-Text-Regular";
+  font-size: 14.4px;
+  color: #636363;
+  letter-spacing: -0.34px;
+  line-height: 23px;
+  margin-bottom: 1rem;
+}
+
+.card_link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card_link span {
+  display: inline-block;
+  background: url(/assets/images/icons8-right-arrow-50.png) no-repeat center center/cover;
+  height: 1rem;
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* FOOTER LISTS */
 .list_title {
   font-family: "SF-Pro-Text-Medium";
 }
@@ -187,12 +235,18 @@ img {
 }
 
 .footer_link {
-  position: relative;
   border-bottom: 1px solid #dedede;
   padding: 0.8rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  color: #1a94e6;
+}
+
+.footer_link a {
+  display: inline-block;
+  width: 100%;
 }
 
 .footer_links {
@@ -221,6 +275,10 @@ img {
   border-bottom: 1px solid #dedede;
   width: 100%;
   left: 0;
+}
+
+.footer_dropdown_menu .footer_link {
+  padding: 0.48rem 0;
 }
 
 .footer_dropdown_menu a {
