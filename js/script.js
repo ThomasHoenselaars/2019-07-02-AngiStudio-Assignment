@@ -50,8 +50,8 @@ const dropdownMenu = document.querySelector(".footer_dropdown_menu");
 
 const showDropdown = e => {
   closestDropdown = e.target.lastElementChild;
-  e.target.classList.toggle("is-active");
   closestDropdown.classList.toggle("is-active");
+  e.target.classList.toggle("is-active");
 };
 
 dropdownLinks.forEach(dropdownLink => {
