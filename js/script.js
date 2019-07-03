@@ -1,28 +1,41 @@
-// TODO
-
-const todoInput = document.querySelector(".todo_input");
-const addButton = document.querySelector(".todo_button");
-const todoList = document.querySelector(".todo_list");
-const todoItems = document.querySelectorAll(".todo_item");
-
-console.log(todoList);
+const todoInput = document.querySelector(".todo__input");
+const addButton = document.querySelector(".todo__button");
+const todoList = document.querySelector(".todo__list");
+const todoItems = document.querySelectorAll(".todo__item");
+const todoWarning = document.querySelector(".todo__warning");
+const footerDropdownLinks = document.querySelectorAll(".footer__dropdown__links");
 
 // ADD TODO
 const addTodo = todo => {
-  entry = document.createElement("li");
-  entry.classList.add("todo_item");
-  entry.innerHTML = `${todo}<span class="check_complete"><div></div></span>`;
+  let entry = document.createElement("li");
+  entry.classList.add("todo__item");
+  entry.innerHTML = `${todo}<div class="todo__operators">
+  <span class="check__complete is-completed"><div></div></span>
+  <span class="todo__delete">X</span>
+  </div>`;
   todoList.insertBefore(entry, todoList.firstChild);
+  checkList();
 };
 
 // MARK COMPLETE
 const markComplete = e => {
   e.target.closest("LI").classList.toggle("is-completed");
+};
 
-  const checkComplete = e.target.closest("LI").querySelector(".check_complete");
+// DELETE TODO
+const deleteTodo = e => {
+  e.target.closest("LI").remove();
+  checkList();
+};
 
-  checkComplete.classList.toggle("is-completed");
-  checkComplete.firstChild.classList.toggle("done");
+const checkList = () => {
+  if (todoList.children.length === 0) {
+    todoWarning.style.display = "block";
+    todoList.style.display = "none";
+  } else {
+    todoWarning.style.display = "none";
+    todoList.style.display = "block";
+  }
 };
 
 // Event Listeners
@@ -38,22 +51,21 @@ addButton.addEventListener("click", e => {
 });
 
 todoList.addEventListener("click", e => {
-  markComplete(e);
+  if (e.target.classList.contains("todo__delete")) {
+    deleteTodo(e);
+  } else {
+    markComplete(e);
+  }
 });
 
 // FOOTER DROPDOWNS
 
-const dropdownLinks = document.querySelectorAll(".dropdown");
-const dropdownMenu = document.querySelector(".footer_dropdown_menu");
-
 const showDropdown = e => {
-  closestDropdown = e.target.lastElementChild;
-  closestDropdown.classList.toggle("is-active");
-  e.target.classList.toggle("is-active");
+  e.target.closest(".footer__dropdown__links").classList.toggle("is-active");
 };
 
-dropdownLinks.forEach(dropdownLink => {
-  dropdownLink.addEventListener("click", e => {
+footerDropdownLinks.forEach(footerDropdownLink => {
+  footerDropdownLink.addEventListener("click", e => {
     showDropdown(e);
   });
 });

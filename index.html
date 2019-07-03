@@ -10,88 +10,115 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <a href="https://www.angistudio.com/" class="header_link">angi studio</a>
+        <a href="https://www.angistudio.com/" class="header__link">angi studio</a>
       </header>
 
       <section class="hero">
-        <h1 class="hero_title">Job application</h1>
-        <p class="hero_text">This to-do list contains the tasks I need to complete so I can apply to a job well prepared.</p>
+        <h1 class="hero__title">Job application</h1>
+        <p class="hero__text">This to-do list contains the tasks I need to complete so I can apply to a job well prepared.</p>
       </section>
 
       <main class="content">
-        <h3 class="content_title">New to-do</h3>
+        <h3 class="content__title">New to-do</h3>
 
         <form class="todo">
-          <input type="text" class="todo_input" placeholder="Your task..." />
-          <button class="todo_button">Add to-do</button>
+          <input type="text" class="todo__input" placeholder="Your task..." />
+          <button class="todo__button">Add to-do</button>
         </form>
 
-        <h3 class="content_title">Current to-do's</h3>
-        <ul class="todo_list">
-          <li class="todo_item">
-            Reading about the Angi Studio<span class="check_complete"><div></div></span>
+        <h3 class="content__title">Current to-do's</h3>
+        <p class="todo__warning">Your todo list is empty...</p>
+
+        <ul class="todo__list">
+          <li class="todo__item">
+            Reading about the Angi Studio
+            <div class="todo__operators">
+              <span class="check__complete"><div></div></span>
+              <span class="todo__delete">X</span>
+            </div>
           </li>
-          <li class="todo_item is-completed">
-            Writing a recommendation letter<span class="check_complete is-completed"><div class="done"></div></span>
+          <li class="todo__item is-completed">
+            Writing a recommendation letter
+            <div class="todo__operators">
+              <span class="check__complete is-completed"><div></div></span>
+              <span class="todo__delete">X</span>
+            </div>
           </li>
-          <li class="todo_item">
-            Gathering a project or coding the challenge<span class="check_complete"><div></div></span>
+          <li class="todo__item">
+            Gathering a project or coding the challenge
+            <div class="todo__operators">
+              <span class="check__complete"><div></div></span>
+              <span class="todo__delete">X</span>
+            </div>
           </li>
-          <li class="todo_item">
-            Applying for the job<span class="check_complete"><div></div></span>
+          <li class="todo__item">
+            Applying for the job
+            <div class="todo__operators">
+              <span class="check__complete"><div></div></span>
+              <span class="todo__delete">X</span>
+            </div>
           </li>
-          <li class="todo_item">
-            Reading about the Angi Studio<span class="check_complete"><div></div></span>
+          <li class="todo__item">
+            Reading about the Angi Studio
+            <div class="todo__operators">
+              <span class="check__complete"><div></div></span>
+              <span class="todo__delete">X</span>
+            </div>
           </li>
-          <li class="todo_item">
-            Reading about the Angi Studio<span class="check_complete"><div></div></span>
+          <li class="todo__item">
+            Reading about the Angi Studio
+
+            <div class="todo__operators">
+              <span class="check__complete"><div></div></span>
+              <span class="todo__delete">X</span>
+            </div>
           </li>
         </ul>
       </main>
 
       <footer class="footer">
-        <h3 class="content_title">Useful links</h3>
-        <section class="footer_wrapper">
-          <div class="footer_card">
-            <div class="card_img"></div>
-            <div class="card_body">
-              <h3 class="card_title">ReactJS Development</h3>
+        <h3 class="content__title">Useful links</h3>
+        <section class="footer__wrapper">
+          <div class="footer__card">
+            <div class="card__img"></div>
+            <div class="card__body">
+              <h3 class="card__title">ReactJS Development</h3>
 
-              <p class="card_text">React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently…</p>
-              <a href="#" class="card_link">
+              <p class="card__text">React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently…</p>
+              <a href="#" class="card__link">
                 Read more
                 <span></span>
               </a>
             </div>
           </div>
-          <div class="footer_card">
-            <section class="footer_list">
-              <h4 class="list_title">Agencies</h4>
-              <ul class="footer_links">
-                <li class="footer_link"><a href="https://www.angistudio.com/">Angi Studio Design</a></li>
-                <li class="footer_link"><a href="https://www.angistudio.com/">Angi Studio Development</a></li>
+          <div class="footer__card">
+            <section class="footer__list">
+              <h4 class="list__title">Agencies</h4>
+              <ul class="footer__links">
+                <li class="footer__link"><a href="https://www.angistudio.com/">Angi Studio Design</a></li>
+                <li class="footer__link"><a href="https://www.angistudio.com/">Angi Studio Development</a></li>
               </ul>
             </section>
 
-            <section class="footer_list">
-              <h4 class="list_title">Development</h4>
-              <ul class="footer_links">
-                <li class="footer_link"><a href="https://stackoverflow.com/">Stackoverflow</a></li>
-                <li class="footer_link"><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                <li class="footer_link"><a href="https://stackexchange.com/">Stackexchange</a></li>
-                <li class="footer_link"><a href="https://devhints.io/">Devhints.io</a></li>
-                <li class="footer_link"><a href="https://www.reddit.com/">Reddit</a></li>
+            <section class="footer__list">
+              <h4 class="list__title">Development</h4>
+              <ul class="footer__links">
+                <li class="footer__link"><a href="https://stackoverflow.com/">Stackoverflow</a></li>
+                <li class="footer__link"><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li class="footer__link"><a href="https://stackexchange.com/">Stackexchange</a></li>
+                <li class="footer__link"><a href="https://devhints.io/">Devhints.io</a></li>
+                <li class="footer__link"><a href="https://www.reddit.com/">Reddit</a></li>
               </ul>
             </section>
           </div>
-          <div class="footer_card">
-            <section class="footer_list">
-              <h4 class="list_title">Conferenties</h4>
-              <ul class="footer_links">
-                <li class="footer_link dropdown">
+          <div class="footer__card">
+            <section class="footer__list">
+              <h4 class="list__title">Conferenties</h4>
+              <ul class="footer__links">
+                <li class="footer__link footer__dropdown__links">
                   Den Haag
 
-                  <span class="footer_arrow"
+                  <span class="footer__arrow"
                     ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
                       <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                         <path d="M0,172v-172h172v172z" fill="none"></path>
@@ -101,17 +128,17 @@
                       </g>
                     </svg>
                   </span>
-                  <ul class="footer_dropdown_menu">
-                    <li class="footer_link"><a href="#">DevOps 41</a></li>
-                    <li class="footer_link"><a href="#">UxDf</a></li>
-                    <li class="footer_link"><a href="#">Elm Europe</a></li>
-                    <li class="footer_link"><a href="#">NG_MY</a></li>
+                  <ul class="footer__dropdown__menu">
+                    <li class="footer__link"><a href="#">DevOps 41</a></li>
+                    <li class="footer__link"><a href="#">UxDf</a></li>
+                    <li class="footer__link"><a href="#">Elm Europe</a></li>
+                    <li class="footer__link"><a href="#">NG_MY</a></li>
                   </ul>
                 </li>
-                <li class="footer_link dropdown is-active">
+                <li class="footer__link footer__dropdown__links is-active">
                   Amsterdam
 
-                  <span class="footer_arrow"
+                  <span class="footer__arrow"
                     ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
                       <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                         <path d="M0,172v-172h172v172z" fill="none"></path>
@@ -122,18 +149,18 @@
                     </svg>
                   </span>
 
-                  <ul class="footer_dropdown_menu is-active">
-                    <li class="footer_link"><a href="#">DevOps 41</a></li>
-                    <li class="footer_link"><a href="#">UxDf</a></li>
-                    <li class="footer_link"><a href="#">Elm Europe</a></li>
-                    <li class="footer_link"><a href="#">NG_MY</a></li>
+                  <ul class="footer__dropdown__menu">
+                    <li class="footer__link"><a href="#">DevOps 41</a></li>
+                    <li class="footer__link"><a href="#">UxDf</a></li>
+                    <li class="footer__link"><a href="#">Elm Europe</a></li>
+                    <li class="footer__link"><a href="#">NG_MY</a></li>
                   </ul>
                 </li>
 
-                <li class="footer_link dropdown">
+                <li class="footer__link footer__dropdown__links">
                   Rotterdam
 
-                  <span class="footer_arrow"
+                  <span class="footer__arrow"
                     ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
                       <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                         <path d="M0,172v-172h172v172z" fill="none"></path>
@@ -143,17 +170,17 @@
                       </g>
                     </svg>
                   </span>
-                  <ul class="footer_dropdown_menu">
-                    <li class="footer_link"><a href="#">DevOps 41</a></li>
-                    <li class="footer_link"><a href="#">UxDf</a></li>
-                    <li class="footer_link"><a href="#">Elm Europe</a></li>
-                    <li class="footer_link"><a href="#">NG_MY</a></li>
+                  <ul class="footer__dropdown__menu">
+                    <li class="footer__link"><a href="#">DevOps 41</a></li>
+                    <li class="footer__link"><a href="#">UxDf</a></li>
+                    <li class="footer__link"><a href="#">Elm Europe</a></li>
+                    <li class="footer__link"><a href="#">NG_MY</a></li>
                   </ul>
                 </li>
-                <li class="footer_link dropdown">
+                <li class="footer__link footer__dropdown__links">
                   Eindhoven
 
-                  <span class="footer_arrow"
+                  <span class="footer__arrow"
                     ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
                       <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                         <path d="M0,172v-172h172v172z" fill="none"></path>
@@ -163,11 +190,11 @@
                       </g>
                     </svg>
                   </span>
-                  <ul class="footer_dropdown_menu">
-                    <li class="footer_link"><a href="#">DevOps 41</a></li>
-                    <li class="footer_link"><a href="#">UxDf</a></li>
-                    <li class="footer_link"><a href="#">Elm Europe</a></li>
-                    <li class="footer_link"><a href="#">NG_MY</a></li>
+                  <ul class="footer__dropdown__menu">
+                    <li class="footer__link"><a href="#">DevOps 41</a></li>
+                    <li class="footer__link"><a href="#">UxDf</a></li>
+                    <li class="footer__link"><a href="#">Elm Europe</a></li>
+                    <li class="footer__link"><a href="#">NG_MY</a></li>
                   </ul>
                 </li>
               </ul>
