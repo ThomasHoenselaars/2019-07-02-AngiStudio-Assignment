@@ -187,7 +187,7 @@ img {
   background: rgba(255, 0, 0, 0.897);
 }
 
-.check__complete {
+.todo__complete {
   display: inline-block;
   height: 24px;
   width: 24px;
@@ -195,19 +195,19 @@ img {
   border-radius: 50%;
 }
 
-.is-completed .check__complete {
+.is-completed .todo__complete {
   background: #8bc241;
 }
-.is-completed .check__complete:hover {
+.is-completed .todo__complete:hover {
   background: #92cf42f5;
 }
 
-.is-completed .check__complete > div {
+.is-completed .todo__complete > div {
   position: relative;
   color: white;
 }
 
-.is-completed .check__complete > div:before {
+.is-completed .todo__complete > div:before {
   content: " ";
   position: absolute;
   border-color: #fff;

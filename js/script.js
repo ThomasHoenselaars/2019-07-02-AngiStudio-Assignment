@@ -10,7 +10,7 @@ const addTodo = todo => {
   let entry = document.createElement("li");
   entry.classList.add("todo__item");
   entry.innerHTML = `${todo}<div class="todo__operators">
-  <span class="check__complete is-completed"><div></div></span>
+  <span class="todo__complete is-completed"><div></div></span>
   <span class="todo__delete">X</span>
   </div>`;
   todoList.insertBefore(entry, todoList.firstChild);
