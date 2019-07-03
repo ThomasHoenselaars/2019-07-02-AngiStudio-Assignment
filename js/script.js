@@ -3,6 +3,7 @@
 const todoInput = document.querySelector(".todo_input");
 const addButton = document.querySelector(".todo_button");
 const todoList = document.querySelector(".todo_list");
+const todoItems = document.querySelectorAll(".todo_item");
 
 console.log(todoList);
 
@@ -16,9 +17,10 @@ const addTodo = todo => {
 
 // MARK COMPLETE
 const markComplete = e => {
-  e.target.classList.toggle("is-completed");
+  e.target.closest("LI").classList.toggle("is-completed");
 
-  const checkComplete = e.target.querySelector(".check_complete");
+  const checkComplete = e.target.closest("LI").querySelector(".check_complete");
+
   checkComplete.classList.toggle("is-completed");
   checkComplete.firstChild.classList.toggle("done");
 };
@@ -36,11 +38,7 @@ addButton.addEventListener("click", e => {
 });
 
 todoList.addEventListener("click", e => {
-  if (e.target.nodeName === "LI") {
-    markComplete(e);
-  } else {
-    return;
-  }
+  markComplete(e);
 });
 
 // FOOTER DROPDOWNS

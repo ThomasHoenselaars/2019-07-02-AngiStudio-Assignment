@@ -92,6 +92,12 @@ img {
   margin-left: 2rem;
   min-width: 9rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.todo_button:hover {
+  background: #ffffff;
+  color: #179ce4;
 }
 
 .todo_list {
@@ -113,9 +119,18 @@ img {
   cursor: pointer;
 }
 
+.todo_item:hover {
+  background: #dedede25;
+}
+
 .todo_item.is-completed {
   color: #8bc241;
   background: rgba(138, 194, 65, 0.25);
+}
+
+.todo_item.is-completed:hover {
+  color: #8bc241;
+  background: rgba(138, 194, 65, 0.18);
 }
 
 .todo_item:last-child {
