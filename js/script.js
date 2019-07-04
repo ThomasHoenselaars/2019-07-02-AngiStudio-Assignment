@@ -7,9 +7,10 @@ const footerDropdownLinks = document.querySelectorAll(".footer__dropdown__links"
 
 // ADD TODO
 const addTodo = todo => {
+  let todoValidated = splitString(todo, 23);
   let entry = document.createElement("li");
   entry.classList.add("todo__item");
-  entry.innerHTML = `${todo}<div class="todo__operators">
+  entry.innerHTML = `${todoValidated}<div class="todo__operators">
   <span class="todo__complete is-completed"><div></div></span>
   <span class="todo__delete">X</span>
   </div>`;
@@ -37,6 +38,24 @@ const checkList = () => {
     todoList.style.display = "block";
   }
 };
+
+// FUNCTION OM TE VOORKOMEN DAT WOORDEN TE LANG ZIJN EN UIT DE LI BLEEDEN
+function splitString(str, length) {
+  var words = str.split(" ");
+  for (var j = 0; j < words.length; j++) {
+    var l = words[j].length;
+    if (l > length) {
+      var result = [],
+        i = 0;
+      while (i < l) {
+        result.push(words[j].substr(i, length));
+        i += length;
+      }
+      words[j] = result.join(" ");
+    }
+  }
+  return words.join(" ");
+}
 
 // Event Listeners
 addButton.addEventListener("click", e => {
