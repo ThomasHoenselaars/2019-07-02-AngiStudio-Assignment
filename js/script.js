@@ -60,7 +60,7 @@ function splitString(str, length) {
 // Event Listeners
 addButton.addEventListener("click", e => {
   e.preventDefault();
-  todo = todoInput.value;
+  let todo = todoInput.value;
   if (todo.length < 1) {
     return;
   } else {
