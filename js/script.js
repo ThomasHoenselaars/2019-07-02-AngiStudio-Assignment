@@ -39,7 +39,7 @@ const checkList = () => {
   }
 };
 
-// FUNCTION OM TE VOORKOMEN DAT WOORDEN TE LANG ZIJN EN UIT DE LI BLEEDEN
+// FUNCTION OM TE VOORKOMEN DAT WOORDEN TE LANG ZIJN EN UIT LI BLEEDEN
 function splitString(str, length) {
   var words = str.split(" ");
   for (var j = 0; j < words.length; j++) {

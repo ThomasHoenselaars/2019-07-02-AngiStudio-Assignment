@@ -41,7 +41,6 @@ img {
 
 .wrapper {
   max-width: 936px;
-  /* border: 1px solid red; */
   margin: 0 auto;
 }
 
@@ -420,14 +419,8 @@ img {
   }
 
   .is-completed .todo__complete > div:before {
-    content: " ";
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
     top: 8px;
     left: 12px;
-    transform: rotate(45deg);
     height: 11px;
     width: 7px;
   }
