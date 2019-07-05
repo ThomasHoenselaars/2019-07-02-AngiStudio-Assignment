@@ -149,7 +149,7 @@ img {
 }
 
 .todo__item.is-completed {
-  color: var(--succes-color);
+  color: var(--success-color);
   background: rgba(138, 194, 65, 0.25);
 }
 
@@ -196,6 +196,7 @@ img {
 
 .is-completed .todo__complete {
   background: #8bc241;
+  color: #8bc241;
 }
 .is-completed .todo__complete:hover {
   background: #92cf42f5;
